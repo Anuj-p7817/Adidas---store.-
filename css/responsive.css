@@ -1,0 +1,83 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .cart-item-quantity,
+    .cart-item-price {
+        grid-column: 1 / -1;
+    }
+
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter-container select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-icons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-products h2,
+    .products-section h2 {
+        font-size: 24px;
+    }
+
+    .checkout-container {
+        padding: 20px;
+    }
+}
