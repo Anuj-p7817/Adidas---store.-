@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ADIDAS</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">🛒 Cart</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="detail-container">
+            <div class="product-image">
+                <img id="main-image" src="" alt="Product">
+            </div>
+            <div class="product-info">
+                <h2 id="product-name"></h2>
+                <p id="product-description"></p>
+                <div class="rating">★★★★★ (Based on reviews)</div>
+                <div class="price-section">
+                    <span id="product-price" class="price"></span>
+                </div>
+                
+                <div class="options">
+                    <label>Size:</label>
+                    <select id="size-select">
+                        <option>Select Size</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+
+                    <label>Color:</label>
+                    <select id="color-select">
+                        <option>Select Color</option>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                    </select>
+
+                    <label>Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+
+                <button onclick="addToCart()" class="btn btn-primary">Add to Cart</button>
+                <button onclick="buyNow()" class="btn btn-secondary">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Adidas. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
