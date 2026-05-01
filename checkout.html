@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ADIDAS</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <div class="checkout-container">
+            <form id="checkout-form" onsubmit="submitOrder(event)">
+                <h3>Shipping Information</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="Zip Code" required>
+
+                <h3>Payment Information</h3>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" placeholder="CVV" required>
+
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Adidas. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+</html>
